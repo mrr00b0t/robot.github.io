@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi, I'm a Robot</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body Styling */
+        body {
+            background-color: #121212;
+            color: #00ff99;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            border: 1px solid #00ff99;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Title and Text Styling */
+        h1 {
+            font-size: 2em;
+            color: #00ff99;
+            margin-bottom: 20px;
+            animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Link Styling */
+        a {
+            color: #00ff99;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #00ff99;
+        }
+
+        a:hover {
+            color: #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello, I am Robot</h1>
+        <p>
+            Let's do something exciting, shall we? I'm not a professional, I'm not an expert—just a humble coder 
+            sharing what I think is right. As an ethical hacker and curious mind, I'm here to explore, 
+            create, and improve the digital landscape.
+        </p>
+        <p>Have a fantastic day!</p>
+        <a href="#">Explore My World</a>
+    </div>
+
+</body>
+  </html>
